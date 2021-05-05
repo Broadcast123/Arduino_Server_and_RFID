@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bienvenido al lector de código RFID para tu asistencia</title>
+    <h1></h1>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #e6e6e6;
+            font-family: "Arial", Georgia, Serif;
+            margin: 0px;         
+        }
+
+        h1 {
+            color: #1e73be;
+            text-align: center;
+        }
+
+        h1 a {
+            color: #1e73be;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .main {
+            margin: 0 auto;
+            max-width: 500px;
+            width: 100%;
+            background-color: #FFFFFF;
+            padding: 2em 0 1em 0;
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            margin: 0 auto;
+            color: #09f;
+            text-decoration: none;
+            padding: 1em 0;
+            width: 80%;
+            border: solid 1px #000000;
+        }
+
+        .button--on {
+            background-color: #01DF01;
+            color: #FFFFFF;
+        }
+
+        .button--off {
+            background-color: #FE2E2E;
+            color: #FFFFFF;
+        }
+
+        .status {
+            padding-top: 1em;
+        }
+
+        .footer {
+            padding: 1em 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/" title="Control web de un led">Bienvenido al lector de código RFID para tu Asistencia.</a></h1>
+        <h1><a href="/" title="Control web de un led">Mostrar tu credencial a una distancia menor de 3 cm.</a></h1>
+    </header>
+    <main class="main">
+        <div class="col-lg-6">
+            <img src="UP.jpg"  width= "200"
+            height= "200" alt="Logo UPV" class="responsive">
+        </div>
+
+        
+        <form name="form" action="">
+
+            <section class="status">
+                <!--<?php if($status == "on"){ ?>-->
+                <p style="color: orangered;">El código RFID es:</p>
+                <p>0204B934</p> 
+                <p style="color:orangered;">El aula es:</p>
+                <p>A-208</p>
+                <p style="color: red;">
+                    <?php echo $status; ?>
+                </p>
+                <?php } ?>
+            </section>
+        </form>
+    </main>
+    <footer class="footer">
+        <span>Copyright &copy; Módulo de Identificación por Radio Frecuencia y Protocolo
+            de Comunicación Ethernet para Sistema de Control de Asistencia UPV 2021.</span>
+
+
+    </footer>
+</body>
+
+</html>
